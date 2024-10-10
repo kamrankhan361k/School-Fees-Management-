@@ -1,0 +1,5 @@
+D:\Nilesh\CNMehta_School\CNMehta_School.DataModel\bin\x86\Release\CNMehta_School.DataModel.dll
+D:\Nilesh\CNMehta_School\CNMehta_School.DataModel\bin\x86\Release\CNMehta_School.DataModel.pdb
+D:\Nilesh\CNMehta_School\CNMehta_School.DataModel\obj\x86\Release\CNMehta_School.DataModel.csprojResolveAssemblyReference.cache
+D:\Nilesh\CNMehta_School\CNMehta_School.DataModel\obj\x86\Release\CNMehta_School.DataModel.dll
+D:\Nilesh\CNMehta_School\CNMehta_School.DataModel\obj\x86\Release\CNMehta_School.DataModel.pdb

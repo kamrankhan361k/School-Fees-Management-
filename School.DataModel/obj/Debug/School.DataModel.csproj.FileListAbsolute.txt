@@ -1,0 +1,5 @@
+F:\Projects\Local India\School\School.DataModel\bin\Debug\School.DataModel.dll
+F:\Projects\Local India\School\School.DataModel\bin\Debug\School.DataModel.pdb
+F:\Projects\Local India\School\School.DataModel\obj\Debug\School.DataModel.csprojResolveAssemblyReference.cache
+F:\Projects\Local India\School\School.DataModel\obj\Debug\School.DataModel.dll
+F:\Projects\Local India\School\School.DataModel\obj\Debug\School.DataModel.pdb

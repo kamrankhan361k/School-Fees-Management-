@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21469B58-C901-48FC-B650-178656115374}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>School</RootNamespace>
+    <AssemblyName>School</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>RequireDLL\Microsoft.ReportDesigner.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>RequireDLL\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>RequireDLL\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet_School.cs">
+      <DependentUpon>DataSet_School.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet_School.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_School.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\CommonFunction.cs" />
+    <Compile Include="Helpers\PrintFunction.cs" />
+    <Compile Include="Helpers\UserHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Account\Contra\frmContra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Account\Contra\frmContra.Designer.cs">
+      <DependentUpon>frmContra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Account\Journal\frmJournal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Account\Journal\frmJournal.Designer.cs">
+      <DependentUpon>frmJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Account\LedgerHeader\frmLedgerHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Account\LedgerHeader\frmLedgerHeader.Designer.cs">
+      <DependentUpon>frmLedgerHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Account\Ledger\frmLedger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Account\Ledger\frmLedger.Designer.cs">
+      <DependentUpon>frmLedger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Account\Other\frmOther.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Account\Other\frmOther.Designer.cs">
+      <DependentUpon>frmOther.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Account\Payment\frmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Account\Payment\frmPayment.Designer.cs">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CollectFees\frmAssignFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CollectFees\frmAssignFees.Designer.cs">
+      <DependentUpon>frmAssignFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CollectFees\frmCollectFeesMethods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CollectFees\frmCollectFeesMethods.Designer.cs">
+      <DependentUpon>frmCollectFeesMethods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CollectFees\frmSavePendingCollectFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CollectFees\frmSavePendingCollectFees.Designer.cs">
+      <DependentUpon>frmSavePendingCollectFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CollectFees\frmViewReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CollectFees\frmViewReceipt.Designer.cs">
+      <DependentUpon>frmViewReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CollectFees\frmFeesReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CollectFees\frmFeesReceipt.Designer.cs">
+      <DependentUpon>frmFeesReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CollectFees\frmSaveCollectFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CollectFees\frmSaveCollectFees.Designer.cs">
+      <DependentUpon>frmSaveCollectFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CollectFees\frmCollectFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CollectFees\frmCollectFees.Designer.cs">
+      <DependentUpon>frmCollectFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Department\frmDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Department\frmDepartment.Designer.cs">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Division\frmDivision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Division\frmDivision.Designer.cs">
+      <DependentUpon>frmDivision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Fees\frmEditFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Fees\frmEditFees.Designer.cs">
+      <DependentUpon>frmEditFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Fees\frmSaveFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Fees\frmSaveFees.Designer.cs">
+      <DependentUpon>frmSaveFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Fees\frmFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Fees\frmFees.Designer.cs">
+      <DependentUpon>frmFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmMaster.Designer.cs">
+      <DependentUpon>frmMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PrintSetting\frmSavePrintSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PrintSetting\frmSavePrintSetting.Designer.cs">
+      <DependentUpon>frmSavePrintSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\frmBalanceSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Report\frmBalanceSheet.Designer.cs">
+      <DependentUpon>frmBalanceSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\frmReceiptWiseFeesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Report\frmReceiptWiseFeesReport.Designer.cs">
+      <DependentUpon>frmReceiptWiseFeesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\frmStandardWiseFeesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Report\frmStandardWiseFeesReport.Designer.cs">
+      <DependentUpon>frmStandardWiseFeesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\frmPendingFeesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Report\frmPendingFeesReport.Designer.cs">
+      <DependentUpon>frmPendingFeesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\frmDateWiseFeesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Report\frmDateWiseFeesReport.Designer.cs">
+      <DependentUpon>frmDateWiseFeesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Report\frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\frmStudentSummaryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Report\frmStudentSummaryReport.Designer.cs">
+      <DependentUpon>frmStudentSummaryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Standard\frmStandard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Standard\frmStandard.Designer.cs">
+      <DependentUpon>frmStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Student\frmUpdateStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Student\frmUpdateStudent.Designer.cs">
+      <DependentUpon>frmUpdateStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Student\frmSaveStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Student\frmSaveStudent.Designer.cs">
+      <DependentUpon>frmSaveStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Student\frmStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Student\frmStudent.Designer.cs">
+      <DependentUpon>frmStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Year\frmYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Year\frmYear.Designer.cs">
+      <DependentUpon>frmYear.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Account\Contra\frmContra.resx">
+      <DependentUpon>frmContra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Account\Journal\frmJournal.resx">
+      <DependentUpon>frmJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Account\LedgerHeader\frmLedgerHeader.resx">
+      <DependentUpon>frmLedgerHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Account\Ledger\frmLedger.resx">
+      <DependentUpon>frmLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Account\Other\frmOther.resx">
+      <DependentUpon>frmOther.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Account\Payment\frmPayment.resx">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CollectFees\frmAssignFees.resx">
+      <DependentUpon>frmAssignFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CollectFees\frmCollectFeesMethods.resx">
+      <DependentUpon>frmCollectFeesMethods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CollectFees\frmSavePendingCollectFees.resx">
+      <DependentUpon>frmSavePendingCollectFees.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CollectFees\frmViewReceipt.resx">
+      <DependentUpon>frmViewReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CollectFees\frmFeesReceipt.resx">
+      <DependentUpon>frmFeesReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CollectFees\frmSaveCollectFees.resx">
+      <DependentUpon>frmSaveCollectFees.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CollectFees\frmCollectFees.resx">
+      <DependentUpon>frmCollectFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Department\frmDepartment.resx">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Division\frmDivision.resx">
+      <DependentUpon>frmDivision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Fees\frmEditFees.resx">
+      <DependentUpon>frmEditFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Fees\frmSaveFees.resx">
+      <DependentUpon>frmSaveFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Fees\frmFees.resx">
+      <DependentUpon>frmFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmMaster.resx">
+      <DependentUpon>frmMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PrintSetting\frmSavePrintSetting.resx">
+      <DependentUpon>frmSavePrintSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\BalanceSheet.rdlc" />
+    <EmbeddedResource Include="UI\Report\frmBalanceSheet.resx">
+      <DependentUpon>frmBalanceSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\frmStudentSummaryReport.resx">
+      <DependentUpon>frmStudentSummaryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\PaymentVoucherReceipt.rdlc" />
+    <EmbeddedResource Include="UI\Report\ReceiptWiseFeesReport.rdlc" />
+    <EmbeddedResource Include="UI\Report\frmReceiptWiseFeesReport.resx">
+      <DependentUpon>frmReceiptWiseFeesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\StandardWiseFeesReport.rdlc" />
+    <EmbeddedResource Include="UI\Report\frmStandardWiseFeesReport.resx">
+      <DependentUpon>frmStandardWiseFeesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\PendingFeesReport.rdlc" />
+    <EmbeddedResource Include="UI\Report\DateWiseFeesReport.rdlc" />
+    <EmbeddedResource Include="UI\Report\FeesReceipt.rdlc" />
+    <EmbeddedResource Include="UI\Report\frmPendingFeesReport.resx">
+      <DependentUpon>frmPendingFeesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\frmDateWiseFeesReport.resx">
+      <DependentUpon>frmDateWiseFeesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\StudentSummary.rdlc" />
+    <EmbeddedResource Include="UI\Standard\frmStandard.resx">
+      <DependentUpon>frmStandard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Student\frmUpdateStudent.resx">
+      <DependentUpon>frmUpdateStudent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Student\frmSaveStudent.resx">
+      <DependentUpon>frmSaveStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Student\frmStudent.resx">
+      <DependentUpon>frmStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Year\frmYear.resx">
+      <DependentUpon>frmYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet_School.xsc">
+      <DependentUpon>DataSet_School.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_School.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_School.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_School.xss">
+      <DependentUpon>DataSet_School.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\Active.gif" />
+    <Content Include="Image\BtnBack.png" />
+    <Content Include="Image\Close.png" />
+    <Content Include="Image\Delete.gif" />
+    <Content Include="Image\Edit.gif" />
+    <Content Include="Image\Empty.png" />
+    <Content Include="Image\favicon.ico" />
+    <Content Include="Image\favicon.png" />
+    <Content Include="Image\InActive.gif" />
+    <Content Include="Image\Add.png" />
+    <Content Include="Image\Logo.png" />
+    <Content Include="Image\Print.png" />
+    <Content Include="Image\View.png" />
+    <Content Include="RequireDLL\Microsoft.ReportDesigner.dll" />
+    <Content Include="RequireDLL\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="RequireDLL\Microsoft.ReportViewer.WinForms.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UI\Voucher\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\School.Common\School.Common.csproj">
+      <Project>{9244a891-fe13-499c-982b-eb4d59528b89}</Project>
+      <Name>School.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\School.DataAccess\School.DataAccess.csproj">
+      <Project>{ae26b48e-2de6-4fb6-8d9b-5f8f279cc501}</Project>
+      <Name>School.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\School.DataModel\School.DataModel.csproj">
+      <Project>{d68a738c-373a-4e0c-98bc-3afd08a8a8a5}</Project>
+      <Name>School.DataModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+F:\Projects\CNMehta_School\CNMehta_School.DataModel\bin\Release\CNMehta_School.DataModel.dll
+F:\Projects\CNMehta_School\CNMehta_School.DataModel\bin\Release\CNMehta_School.DataModel.pdb
+F:\Projects\CNMehta_School\CNMehta_School.DataModel\obj\Release\CNMehta_School.DataModel.dll
+F:\Projects\CNMehta_School\CNMehta_School.DataModel\obj\Release\CNMehta_School.DataModel.pdb
+F:\Projects\CNMehta_School\CNMehta_School.DataModel\obj\Release\CNMehta_School.DataModel.csprojResolveAssemblyReference.cache
+D:\Nilesh\CNMehta_School\CNMehta_School.DataModel\bin\Release\CNMehta_School.DataModel.dll
+D:\Nilesh\CNMehta_School\CNMehta_School.DataModel\bin\Release\CNMehta_School.DataModel.pdb
+D:\Nilesh\CNMehta_School\CNMehta_School.DataModel\obj\Release\CNMehta_School.DataModel.csprojResolveAssemblyReference.cache
+D:\Nilesh\CNMehta_School\CNMehta_School.DataModel\obj\Release\CNMehta_School.DataModel.dll
+D:\Nilesh\CNMehta_School\CNMehta_School.DataModel\obj\Release\CNMehta_School.DataModel.pdb

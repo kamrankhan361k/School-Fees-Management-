@@ -1,0 +1,27 @@
+F:\Projects\CNMehta_School\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.DataAccess.dll
+F:\Projects\CNMehta_School\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.DataAccess.pdb
+F:\Projects\CNMehta_School\CNMehta_School.DataAccess\obj\Debug\CNMehta_School.DataAccess.csprojResolveAssemblyReference.cache
+F:\Projects\CNMehta_School\CNMehta_School.DataAccess\obj\Debug\CNMehta_School.DataAccess.dll
+F:\Projects\CNMehta_School\CNMehta_School.DataAccess\obj\Debug\CNMehta_School.DataAccess.pdb
+F:\Projects\CNMehta_School\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.Common.dll
+F:\Projects\CNMehta_School\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.DataModel.dll
+F:\Projects\CNMehta_School\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.Common.pdb
+F:\Projects\CNMehta_School\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.DataModel.pdb
+E:\School Management\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.DataAccess.dll
+E:\School Management\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.DataAccess.pdb
+E:\School Management\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.Common.dll
+E:\School Management\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.DataModel.dll
+E:\School Management\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.Common.pdb
+E:\School Management\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.DataModel.pdb
+E:\School Management\CNMehta_School.DataAccess\obj\Debug\CNMehta_School.DataAccess.csprojResolveAssemblyReference.cache
+E:\School Management\CNMehta_School.DataAccess\obj\Debug\CNMehta_School.DataAccess.dll
+E:\School Management\CNMehta_School.DataAccess\obj\Debug\CNMehta_School.DataAccess.pdb
+F:\Projects\Local India\CNMehta_School\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.DataAccess.dll
+F:\Projects\Local India\CNMehta_School\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.DataAccess.pdb
+F:\Projects\Local India\CNMehta_School\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.Common.dll
+F:\Projects\Local India\CNMehta_School\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.DataModel.dll
+F:\Projects\Local India\CNMehta_School\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.Common.pdb
+F:\Projects\Local India\CNMehta_School\CNMehta_School.DataAccess\bin\Debug\CNMehta_School.DataModel.pdb
+F:\Projects\Local India\CNMehta_School\CNMehta_School.DataAccess\obj\Debug\CNMehta_School.DataAccess.csprojResolveAssemblyReference.cache
+F:\Projects\Local India\CNMehta_School\CNMehta_School.DataAccess\obj\Debug\CNMehta_School.DataAccess.dll
+F:\Projects\Local India\CNMehta_School\CNMehta_School.DataAccess\obj\Debug\CNMehta_School.DataAccess.pdb

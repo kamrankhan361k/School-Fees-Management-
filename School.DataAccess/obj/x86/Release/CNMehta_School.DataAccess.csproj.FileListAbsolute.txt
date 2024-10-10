@@ -1,0 +1,9 @@
+D:\Nilesh\CNMehta_School\CNMehta_School.DataAccess\bin\x86\Release\CNMehta_School.DataAccess.dll
+D:\Nilesh\CNMehta_School\CNMehta_School.DataAccess\bin\x86\Release\CNMehta_School.DataAccess.pdb
+D:\Nilesh\CNMehta_School\CNMehta_School.DataAccess\bin\x86\Release\CNMehta_School.Common.dll
+D:\Nilesh\CNMehta_School\CNMehta_School.DataAccess\bin\x86\Release\CNMehta_School.DataModel.dll
+D:\Nilesh\CNMehta_School\CNMehta_School.DataAccess\bin\x86\Release\CNMehta_School.Common.pdb
+D:\Nilesh\CNMehta_School\CNMehta_School.DataAccess\bin\x86\Release\CNMehta_School.DataModel.pdb
+D:\Nilesh\CNMehta_School\CNMehta_School.DataAccess\obj\x86\Release\CNMehta_School.DataAccess.csprojResolveAssemblyReference.cache
+D:\Nilesh\CNMehta_School\CNMehta_School.DataAccess\obj\x86\Release\CNMehta_School.DataAccess.dll
+D:\Nilesh\CNMehta_School\CNMehta_School.DataAccess\obj\x86\Release\CNMehta_School.DataAccess.pdb

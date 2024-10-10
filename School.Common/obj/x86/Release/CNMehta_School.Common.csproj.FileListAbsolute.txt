@@ -1,0 +1,4 @@
+D:\Nilesh\CNMehta_School\CNMehta_School.Common\bin\x86\Release\CNMehta_School.Common.dll
+D:\Nilesh\CNMehta_School\CNMehta_School.Common\bin\x86\Release\CNMehta_School.Common.pdb
+D:\Nilesh\CNMehta_School\CNMehta_School.Common\obj\x86\Release\CNMehta_School.Common.dll
+D:\Nilesh\CNMehta_School\CNMehta_School.Common\obj\x86\Release\CNMehta_School.Common.pdb

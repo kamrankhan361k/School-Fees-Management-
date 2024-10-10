@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix2">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>3.94792in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>1.40625in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Rectangle Name="Rectangle1">
+                      <ReportItems>
+                        <Textbox Name="ReceivedDate">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>                       બાકી ફી ની યાદી</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>સુજ્ઞ વાલીશ્રી, 
+આપના પુત્ર/પુત્રી </Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!Name.Value</Value>
+                                  <Style>
+                                    <TextDecoration>Underline</TextDecoration>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value xml:space="preserve"> </Value>
+                                  <Style>
+                                    <TextDecoration>Underline</TextDecoration>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>ધો. </Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!Standard.Value</Value>
+                                  <Style>
+                                    <TextDecoration>Underline</TextDecoration>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>
+માં ભણે છે જેમની ફી તા. </Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Iif(TRIM(Fields!ReceivedDate.Value).ToString().Length = 0,"જૂન માસ",Fields!ReceivedDate.Value)</Value>
+                                  <Style>
+                                    <Format>=Format(Fields!ReceivedDate.Value,"dd/MM/yyyy")</Format>
+                                    <TextDecoration>Underline</TextDecoration>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value> થી રૂ|. </Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!PendingFees.Value</Value>
+                                  <Style>
+                                    <TextDecoration>Underline</TextDecoration>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value> બાકી છે
+તો </Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Parameters!Note.Value</Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value> માં ભરી જવી અથવા ઓફિસ માં મળી જવું.</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ReceivedDate</rd:DefaultName>
+                          <Left>0.03125in</Left>
+                          <Height>1.30209in</Height>
+                          <Width>3.91667in</Width>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Dotted</Style>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </ReportItems>
+                      <KeepTogether>true</KeepTogether>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </Rectangle>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="Details" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DataSet</DataSetName>
+        <Top>0.07167in</Top>
+        <Left>0.11333in</Left>
+        <Height>1.40625in</Height>
+        <Width>3.94792in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>None</Style>
+          </BottomBorder>
+          <RightBorder>
+            <Style>None</Style>
+          </RightBorder>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>1.67246in</Height>
+    <Style />
+  </Body>
+  <Width>4.20176in</Width>
+  <Page>
+    <PageHeight>11.69in</PageHeight>
+    <PageWidth>8.27in</PageWidth>
+    <LeftMargin>0.1in</LeftMargin>
+    <RightMargin>0.1in</RightMargin>
+    <TopMargin>0.1in</TopMargin>
+    <BottomMargin>0.1in</BottomMargin>
+    <ColumnSpacing>0.05118in</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSet_School">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>95071a0b-72e2-4d5d-a2fa-f7da9b7c5455</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet">
+      <Query>
+        <DataSourceName>DataSet_School</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Standard">
+          <DataField>Standard</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Department">
+          <DataField>Department</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FeesName">
+          <DataField>FeesName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Fees">
+          <DataField>Fees</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TotalFees">
+          <DataField>TotalFees</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReceiptNo">
+          <DataField>ReceiptNo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Division">
+          <DataField>Division</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Date">
+          <DataField>Date</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DisplayFeesName">
+          <DataField>DisplayFeesName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GRNumber">
+          <DataField>GRNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PendingFees">
+          <DataField>PendingFees</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReceivedDate">
+          <DataField>ReceivedDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet_School</rd:DataSetName>
+         <rd:SchemaPath>F:\Projects\Local India\School\School\DataSet_School.xsd</rd:SchemaPath>
+        <rd:TableName>FeesReceipt</rd:TableName>
+        <rd:TableAdapterFillMethod />
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName />
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="Note">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>SHARED suffixes AS String() = _ 
+{"Thousand ", "Million ", "Billion ", "Trillion ", _ 
+"Quadrillion ", "Quintillion ", "Sextillion "} 
+ 
+SHARED units AS String() = _ 
+{"","One ", "Two ", "Three ", "Four ", "Five ", _ 
+"Six ", "Seven ", "Eight ", "Nine "} 
+ 
+SHARED tens AS String() = _ 
+{"Twenty ", "Thirty ", "Forty ", "Fifty ", "Sixty ", _ 
+"Seventy ", "Eighty ", "Ninety "} 
+ 
+SHARED digits AS String() = _ 
+{"Ten ","Eleven ", "Twelve ", "Thirteen ", "Fourteen ", _ 
+"Fifteen ", "Sixteen ", "Seventeen ", "Eighteen ", "Nineteen"} 
+ 
+SHARED expr AS NEW _ 
+System.Text.RegularExpressions.Regex("^-?\d+(\.\d{2})?$", _ 
+System.Text.RegularExpressions.RegexOptions.None) 
+ 
+PUBLIC Function ExpandPrice(Price AS Double, _ 
+Optional pSeparator AS String = ".") _ 
+AS String 
+Dim pPrice As String 
+pPrice = FORMAT(Price,"##############.00") 
+ 
+Dim temp AS New System.Text.StringBuilder() 
+If Not expr.IsMatch(pPrice) Then 
+ temp.Append(pPrice) 
+Else 
+Dim parts AS String() = pPrice.Split(pSeparator) 
+Dim dollars AS String = parts(0) 
+Dim cents AS String = parts(1) 
+If CDbl(dollars) &gt; 1 Then 
+temp.Append(ExpandIntegerNumber(dollars) &amp; "Rupees ") 
+If CInt(cents) &gt; 0 Then 
+temp.Append("And ") 
+End If 
+ElseIf CDbl(dollars) = 0 Then 
+temp.Append(ExpandIntegerNumber(dollars) &amp; "Zero Rupees") 
+If CInt(cents) &gt;= 0 Then 
+temp.Append("And ") 
+End If 
+ElseIf CDbl(dollars) = 1 Then 
+temp.Append(ExpandIntegerNumber(dollars) &amp; "Rupees " ) 
+End If 
+ 
+If CDbl(cents) &gt; 1 Then 
+temp.Append(ExpandIntegerNumber(cents) ) 
+ElseIf CDbl(cents) = 0 Then 
+temp.Append(ExpandIntegerNumber(cents)) 
+ElseIf CDbl(cents) = 1 Then 
+temp.Append(ExpandIntegerNumber(cents)) 
+End If 
+End If 
+RETURN temp.ToString() 
+End Function 
+ 
+Function ExpandIntegerNumber(pNumberStr AS String) AS String 
+Dim temp2 AS New System.Text.StringBuilder() 
+Dim number AS String = _ 
+StrDup(3 - Len(pNumberStr) Mod 3, "0") &amp; pNumberStr 
+Dim i AS Integer, j AS Integer = -1 
+Dim numPart AS String 
+For i = Len(number) - 2 To 1 Step -3 
+numPart = Mid(number, i, 3) 
+If Clng(numPart &gt; 0) Then 
+If j &gt; -1 Then 
+temp2.Insert(0,suffixes(j),1) 
+End If 
+End If 
+temp2.Insert(0,GetNumberUnder1000Str(numPart),1) 
+j += 1 
+Next 
+RETURN temp2.ToString() 
+End Function 
+ 
+Function GetNumberUnder1000Str(pNumber AS String) AS String 
+Dim temp1 AS New System.Text.StringBuilder() 
+If Len(pNumber) = 3 Then 
+If CLng(Left(pNumber, 1)) &gt; 0 Then 
+temp1.Append(GetNumberUnder100Str(Left(pNumber, 1)) &amp; "Hundred ") 
+End If 
+End If 
+temp1.Append(GetNumberUnder100Str(Right("0" &amp; pNumber, 2))) 
+RETURN temp1.ToString() 
+End Function 
+ 
+Function GetNumberUnder100Str(pNumber AS String) AS String 
+If pNumber &gt; 19 Then 
+RETURN tens(Left(pNumber, 1) - 2) &amp; units(Right(pNumber, 1)) 
+ElseIF pNumber &gt;= 10 and pNumber &lt;= 19 Then 
+RETURN digits(Right(pNumber, 1)) 
+Else 
+RETURN units(Right(pNumber, 1)) 
+End If 
+End Function </Code>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>d94f6e9b-056d-4d66-8f89-aa38184410b6</rd:ReportID>
+</Report>

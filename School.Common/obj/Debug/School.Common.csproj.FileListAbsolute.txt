@@ -1,0 +1,5 @@
+F:\Projects\Local India\School\School.Common\bin\Debug\School.Common.dll
+F:\Projects\Local India\School\School.Common\bin\Debug\School.Common.pdb
+F:\Projects\Local India\School\School.Common\obj\Debug\School.Common.csprojResolveAssemblyReference.cache
+F:\Projects\Local India\School\School.Common\obj\Debug\School.Common.dll
+F:\Projects\Local India\School\School.Common\obj\Debug\School.Common.pdb

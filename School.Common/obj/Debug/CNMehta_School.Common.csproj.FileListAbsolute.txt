@@ -1,0 +1,15 @@
+F:\Projects\CNMehta_School\CNMehta_School.Common\bin\Debug\CNMehta_School.Common.dll
+F:\Projects\CNMehta_School\CNMehta_School.Common\bin\Debug\CNMehta_School.Common.pdb
+F:\Projects\CNMehta_School\CNMehta_School.Common\obj\Debug\CNMehta_School.Common.csprojResolveAssemblyReference.cache
+F:\Projects\CNMehta_School\CNMehta_School.Common\obj\Debug\CNMehta_School.Common.dll
+F:\Projects\CNMehta_School\CNMehta_School.Common\obj\Debug\CNMehta_School.Common.pdb
+E:\School Management\CNMehta_School.Common\bin\Debug\CNMehta_School.Common.dll
+E:\School Management\CNMehta_School.Common\bin\Debug\CNMehta_School.Common.pdb
+E:\School Management\CNMehta_School.Common\obj\Debug\CNMehta_School.Common.csprojResolveAssemblyReference.cache
+E:\School Management\CNMehta_School.Common\obj\Debug\CNMehta_School.Common.dll
+E:\School Management\CNMehta_School.Common\obj\Debug\CNMehta_School.Common.pdb
+F:\Projects\Local India\CNMehta_School\CNMehta_School.Common\bin\Debug\CNMehta_School.Common.dll
+F:\Projects\Local India\CNMehta_School\CNMehta_School.Common\bin\Debug\CNMehta_School.Common.pdb
+F:\Projects\Local India\CNMehta_School\CNMehta_School.Common\obj\Debug\CNMehta_School.Common.dll
+F:\Projects\Local India\CNMehta_School\CNMehta_School.Common\obj\Debug\CNMehta_School.Common.pdb
+F:\Projects\Local India\CNMehta_School\CNMehta_School.Common\obj\Debug\CNMehta_School.Common.csprojResolveAssemblyReference.cache
